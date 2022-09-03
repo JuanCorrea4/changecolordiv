@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: rgb(255, 204, 0);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.containerButtons {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+.containerButtons .changeColor{
+    border-radius: 20px;
+    height:40px;
+    width: 50%;
+    margin: 0px 30px;
+    background-color: rgb(19, 19, 252);
+    color: white;
+    border: none;
+    transition: all 300ms;
+}
+
+.containerButtons .changeColor:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.containerButtons .subtractPixels{
+    border-radius: 50px;
+    height:40px;
+    width: 20%;
+    margin: 0px 30px;
+    background-color: #ff4a4a;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.containerButtons .textButtons{
+    margin: auto 0px;
+    display: inline-table;
+}
+.containerButtons .addPixels{
+    border-radius: 50px;
+    height:40px;
+    width: 20%;
+    margin: 0px 30px;
+    background-color: #ff4a4a;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.subtractPixels:hover{
+    transform: scale(1.05);
+}
+
+.addPixels:hover{
+    transform: scale(1.05);
+}
+.containerInfo{
+    position: relative;
+    top: 47%;
+    left: 50%;
+    width: 430px;
+    transform: translateX(-50%) translateY(-50%);
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.containerInfo .headerContainerInfo{
+    background-color: #14df14;
+    height: 30%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.containerInfo .sectionContainer{
+    position: absolute;
+    background-color: white;
+    height: 70%;
+    width: 100%;
+    bottom: 0;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.sectionContainer>h2{
+    text-align: center;
+    margin: 40px;
+}
+.sectionContainer>p{
+    text-align: center;
+    margin: 40px;
+}
+
+.sectionContainer>button{
+    position: absolute;
+    width: 60%;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: #14df14;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sectionContainer>i{
+    position: absolute;
+    color: #14df14;
+    right: 0;
+}

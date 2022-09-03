@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div class="containerButtons">
+            <input type="color" id="color" onclick="GetColor()">
+            <button class="changeColor" onclick="ChangeColor()">Change color</button>
+            <button id="subtract" class="subtractPixels" onclick="subtractPixels()"> - </button>
+            <p class="textButtons">Size in pixel: <span id="numberPx">1</span></p>
+            <button id="add" class="addPixels" onclick="addPixels()"> + </button>
+        </div>
+        <div class="containerInfo">
+            <header id="changeColorID" class="headerContainerInfo"></header>
+            <section class="sectionContainer">
+                <h2>Title</h2>
+                <p>This should be a little description personal info.</p>
+                <button id="changeColorIDMycv">My CV</button>
+                <i id="folder" class="fa-solid fa-folder-open"></i>
+            </section>
+        </div>
+    </main>
+    <script src="https://kit.fontawesome.com/54ad13b3a7.js" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
